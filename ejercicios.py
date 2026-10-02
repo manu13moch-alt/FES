@@ -60,14 +60,18 @@ print(PI)
 print("2. Redondea el número con round()")
 print(round(PI))
 print("3. Haz la división entera entre el número que te salió y el número 2")
+print(round(PI) // 2)
 print("4. El resultado debería ser 1")
 
 print("--------------")
 
 print("\nEjercicio 6: Conversor de temperatura")
 print("Pide al usuario una temperatura en grados Celsius.")
+grados_celsius = input("Introduce una temperatura en grados Celsius:")
 print("Convierte ese valor a Fahrenheit con la fórmula: F = (C * 9/5) + 32")
+grados_fahrenheit = (float(grados_celsius) * 9/5) + 32
 print("Muestra ambos valores con un mensaje claro.")
+print(f"Has introducido {grados_celsius} grados celsius, que son {grados_fahrenheit} grados fahrenheit")
 
 ### Completa aquí
 
@@ -75,8 +79,13 @@ print("--------------")
 
 print("\nEjercicio 7: Calculadora de propina")
 print("Pide el total de una cuenta y el porcentaje de propina.")
+total_cuenta, porcentaje_propina = input("Introduce el total de una cuenta y el porcentaje de propina separado por un espacio:").split()
+print(f"Total cuenta = {total_cuenta}\nPorcentaje propina = {porcentaje_propina}")
 print("Calcula cuánto es la propina y el total final a pagar.")
+propina = (float(porcentaje_propina)/100)*float(total_cuenta)
+total_final = float(total_cuenta)+propina 
 print("Muestra los resultados con 2 decimales.")
+print(f"Total final a pagar = {total_final}€\nDel cual propina = {propina}€")
 
 ### Completa aquí
 
