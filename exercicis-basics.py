@@ -95,5 +95,10 @@ print("\nEjercicio 8: Validador de contraseña simple")
 print("Pide una contraseña al usuario.")
 print("Comprueba si tiene al menos 8 caracteres.")
 print("Muestra 'Contraseña válida' o 'Contraseña no válida'.")
+contraseña = input("Introduce una contraseña:")
+if len(contraseña) >= 8:
+    print("Contraseña válida")
+else:
+    print("Contraseña no válida")
 
 ### Completa aquí
