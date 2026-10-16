@@ -120,6 +120,20 @@
 # i la contrasenya és correcta. Indica si l'accés es denega perquè el compte
 # està desactivat, perquè la contrasenya és incorrecta o perquè falla el codi;
 # si totes les comprovacions necessàries són correctes, permet l'accés.
+#actiu = input("El compte està actiu? (sí/no): ")
+#contrasenya = input("La contrasenya és correcta? (sí/no): ")
+#if actiu == "sí":
+#    print("El compte està actiu")
+#else:
+#    print("El compte no està actiu")
+#if contrasenya == "sí":
+#    print("La contrasenya es correcte")
+#else:
+#    print("La contrasenya no és correcte")
+#if contrasenya =="sí" and actiu == "sí":
+#    verificació = input("La doble verificació es correcte? (sí/no): ")
+#    if verificació == "sí":
+#        print("Accés permés")
 
 # Exercici 9: Diagnòstic d'un router
 # Demana si el router està encès, si l'indicador LOS del terminal òptic està
@@ -127,6 +141,16 @@
 # cal encendre el router; si ja està encès, comprova si cal revisar el cable
 # de fibra (LOS encès), si cal contactar amb el proveïdor (Internet apagat) o
 # si la connexió funciona correctament. Considera els casos en aquest ordre.
+#router_encès = input("El router està encès? (sí/no): ")
+#if router_encès == "no":
+#   print("Cal encendre el router")
+#elif "no" == input("LOS encès? (sí/no)"):
+#    print("Cal revisar l'estat de la fibra")
+#elif "no" == input("Internet encès? (sí/no)"):
+#    print("Cal contactar amb el proveïdor")
+#else:
+#    print("La connexió funciona correctament")
+
 
 # Exercici 10: Prioritat d'una incidència de xarxa
 # Demana si la incidència afecta un servei crític, el nombre d'usuaris afectats
@@ -134,3 +158,17 @@
 # d'usuaris. Assigna prioritat crítica si afecta un servei crític i no hi ha
 # alternativa, o si afecta almenys 50 usuaris i no hi ha alternativa; alta si
 # afecta almenys 10 usuaris o un servei crític; en qualsevol altre cas, baixa.
+servei_crític = input("La incidència afecta un servei crític? (sí/no): ")
+nombre_usuaris=int(input("introdueix el nombre d'usuaris:"))
+alternativa=input("hi ha una alternativa disponible? (sí/no): ")
+if nombre_usuaris<0:
+    print("Nombre d'usuaris no vàlid")
+elif servei_crític == "sí" and nombre_usuaris >= 50 and alternativa == "no":
+    print("Prioritat crítica")
+    prioritat_critica = 1
+if servei_crític == "sí" or nombre_usuaris >= 10:
+    print("Prioritat alta")
+    prioritat_alta = 1
+else:
+    print("Prioritat baixa")
+    prioritat_baixa = 1
