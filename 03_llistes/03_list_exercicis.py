@@ -45,7 +45,12 @@ print(f"{nombres[central]}")
 # Donada una llista, inverteix-ne només la primera meitat (fent servir slicing
 # i concatenació).
 # Exemple: llista = [1, 2, 3, 4, 5, 6] -> Resultat: [3, 2, 1, 4, 5, 6]
+<<<<<<< Updated upstream
 Llista = [1,2,3,4,5,6]
 meitat = len(Llista) // 2
 Rllista = Llista[meitat-1::-1] + Llista[meitat:]
 print(f"{Rllista}")
+=======
+Reves = nombres[::-1]
+print(f"{Reves}")
+>>>>>>> Stashed changes
