@@ -141,12 +141,12 @@ if contrasenya =="sí" and actiu == "sí":
 # cal encendre el router; si ja està encès, comprova si cal revisar el cable
 # de fibra (LOS encès), si cal contactar amb el proveïdor (Internet apagat) o
 # si la connexió funciona correctament. Considera els casos en aquest ordre.
-router_encès = input("El router està encès? (sí/no): ")
+router_encès = input("El router està encès? (sí/no): ").strip()
 if router_encès == "no":
    print("Cal encendre el router")
-elif "no" == input("LOS encès? (sí/no)"):
+elif "no" == input("LOS encès? (sí/no)").strip():
     print("Cal revisar l'estat de la fibra")
-elif "no" == input("Internet encès? (sí/no)"):
+elif "no" == input("Internet encès? (sí/no)").strip():
     print("Cal contactar amb el proveïdor")
 else:
     print("La connexió funciona correctament")

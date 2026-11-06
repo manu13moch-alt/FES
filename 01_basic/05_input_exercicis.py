@@ -8,7 +8,7 @@
 # Després, mostra un missatge amb aquesta informació.
 nom_tecnic=input("Entra el nom del tecnic responsable:")
 nom_xarxa=input("Entra el nom de la xarxa en que està instal·lant:")
-print(f"En {nom_tecnic} és el responsable de la instal·lació de la xarxa {nom_xarxa}")
+print("En " + nom_tecnic + " és el responsable de la instal·lació de la xarxa " +nom_xarxa)
 # Exercici 2
 # Demana la longitud d'un enllaç de fibra en quilòmetres i la velocitat de transmissió
 # en Gbps. Mostra quants segons caldrien per transmetre 1 GB de dades.
