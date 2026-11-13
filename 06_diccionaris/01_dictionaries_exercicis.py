@@ -21,11 +21,24 @@ estudiant.pop("edat")
 print(estudiant)
 # Exercici 4: Comprovar claus
 # Comprova amb in si existeixen les claus "nom" i "email" i imprimeix el resultat.
-
+print("nom" in estudiant)
+print("email" in estudiant)
 # Exercici 5: Recórrer un diccionari
 # Recorre el diccionari amb un bucle for i items() i imprimeix cada parella com "clau: valor".
-
+for clau, valor in estudiant.items():
+    print(f"{clau}:{valor}")
 # Exercici 6: Comptar paraules
 # Donada la llista de paraules:
-# paraules = ["sol", "lluna", "sol", "estrella", "lluna", "sol"]
+paraules = ["sol", "lluna", "sol", "estrella", "lluna", "sol"]
 # Crea un diccionari que indiqui quantes vegades apareix cada paraula.
+comptador = {
+    "sol":0,"lluna":0,"estrella":0
+}
+for astre in paraules:
+    if astre=="sol":
+        comptador["sol"]+=1
+    elif astre=="lluna":
+        comptador["lluna"]+=1
+    elif astre=="estrella":
+        comptador["estrella"]+=1
+print(comptador)
